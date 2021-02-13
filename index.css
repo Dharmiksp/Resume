@@ -4,7 +4,7 @@ body{
 
 .title{
     position: absolute;
-    top: 15%;
+    top: 20%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -59,37 +59,31 @@ ul li a:hover{
 
 ul li.active a{
     color: #899b9f;
-}
+} 
 
 .dharmik img{
-    margin-top: 1px; 
-    margin-left: 20px;
-    height: 350px;
-    width: 350px;
+    margin-top: 14%; 
+    margin-left: 16%;
+    height: 400px;
+    width: 400px;
     display: inline-block;
     float: left;
 } 
 
-.container{
+.para{
     position: absolute;
-    top: 55%;
-    left: 35%;
-    transform: translate(-30%, -50%);
-    width: 900px;
+    top: 38%;
+    left: 45%;
+    width: 550px;
     height: 300px;
     /* background: yellow; */
     font-weight: lighter;
     font-family: sans-serif;
-}
-
-.container p{
-    margin-top: 70px;
-    margin-left: 55px;
-    font-size: 17px;
+    font-size: 18px;
     text-align: justify;
 }
 
-.container a{
+.para a{
     color: #d15b57;
     text-decoration: none;
 }
@@ -150,5 +144,88 @@ a:hover{
     background-color: #e4405f;
 }
 .social-menu ul li:nth-child(4) a:hover {
+    background-color: #e4dddd;
+}
+.social-menu ul li:nth-child(5) a:hover {
     background-color: #0077B5;
+}
+
+
+@media (max-width: 380px) and (max-height: 670px) {
+    .title{
+        position: absolute;
+        top: 10%;
+        transform: translate(-50%, -50%);
+    }
+    
+    .title h1{
+        color: #899b9f;
+        font-family: sans-serif;
+        font-weight:bolder;
+        letter-spacing: 7px;
+        font-style: normal;
+        font-size: 35px;
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    .dharmik img{
+        margin-top: 24%; 
+        margin-left: 7%;
+        height: 300px;
+        width: 300px;
+        display: inline-block;
+        float: left;
+    } 
+    
+    .para{
+        position: absolute;
+        top: 55%;
+        left: 1%;
+        padding: 20px;
+        width: auto;
+        height: auto;
+        /* background: yellow; */
+        font-weight: lighter;
+        font-family: sans-serif;
+        font-size: 16px;
+        text-align: justify;
+        overflow: hidden;
+    }
+
+    .social-menu ul {
+        position: absolute;
+        top: 106%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 0;
+        margin: 0;
+        display: flex;
+    }
+    .social-menu ul li {
+        list-style: none;
+        margin: 0 10px;
+    }
+    .social-menu ul li .fa {
+        color: #0c0c0cec;
+        font-size: 16px;
+        line-height: 15px;
+        transition: .5s;
+    }
+    .social-menu ul li .fa:hover {
+        color: #899b9f;
+    }
+    .social-menu ul li a {
+        position: relative;
+        display: block;
+        width: 20px;
+        height: 20px;
+        border-radius: 30%;
+        background-color: #fafafa;
+        text-align: center;
+        transition: 0.5s;
+        transform: translate(0,0px);
+        box-shadow: 0px 5px 3px rgba(0, 0, 0, 0.5);
+    }
+
 }
